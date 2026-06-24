@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Nexora</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav id="nav">
+  <a class="brand" href="#home"><i class="fa-solid fa-bolt"></i> Nexora</a>
+  <ul id="links">
+    <li><a href="#home"     class="nl active"><i class="fa-solid fa-house"></i> Home</a></li>
+    <li><a href="#features" class="nl"><i class="fa-solid fa-layer-group"></i> Features</a></li>
+    <li><a href="#contact"  class="nl"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+  </ul>
+  <button id="hb" onclick="toggleMenu()"><i class="fa-solid fa-bars" id="hbi"></i></button>
+</nav>
+
+<section id="home" class="hero">
+  <div class="orb o1"></div><div class="orb o2"></div>
+  <div class="hero-text">
+    <span class="badge"><i class="fa-solid fa-rocket"></i> <span id="badge">Version 3.0 Live</span></span>
+    <h1>Build <em>Faster.</em><br/>Launch <em>Smarter.</em></h1>
+    <h2>The platform that removes friction.</h2>
+    <p>AI tools, design, and deployment — all in one workspace.</p>
+    <div class="btns">
+      <a href="#features" class="btn-p"><i class="fa-solid fa-play"></i> Get Started</a>
+      <a href="#contact"  class="btn-g"><i class="fa-brands fa-youtube"></i> Watch Demo</a>
+    </div>
+  </div>
+  <div class="dash-card">
+    <div class="dots"><span class="d r"></span><span class="d y"></span><span class="d g"></span></div>
+    <p class="dash-lbl">Revenue</p>
+    <div class="bar"><div class="fill" style="width:78%;background:#7F77DD"></div></div>
+    <p class="dash-lbl">Users</p>
+    <div class="bar"><div class="fill" style="width:91%;background:#5DCAA5"></div></div>
+    <p class="dash-lbl">Tasks</p>
+    <div class="bar"><div class="fill" style="width:55%;background:#F0997B"></div></div>
+    <div class="chips">
+      <span class="chip gc"><i class="fa-solid fa-arrow-trend-up"></i> +24%</span>
+      <span class="chip pc"><i class="fa-solid fa-circle-check"></i> 99.9%</span>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="section">
+  <h2 class="sh">Everything you need</h2>
+  <h3 class="ss">Simple. Powerful. Fast.</h3>
+  <div class="grid">
+    <article class="card reveal">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=80" alt="speed"/>
+      <div class="ci pi"><i class="fa-solid fa-bolt"></i></div>
+      <h3>Lightning Fast</h3>
+      <h4>Sub-second builds</h4>
+      <p>Ship <strong>10×</strong> faster with our edge pipeline.</p>
+    </article>
+    <article class="card reveal">
+      <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&q=80" alt="security"/>
+      <div class="ci ti"><i class="fa-solid fa-shield-halved"></i></div>
+      <h3>Zero-Trust Security</h3>
+      <h4>SOC 2 · E2E encrypted</h4>
+      <p>Bank-grade encryption and <strong>role controls</strong> built in.</p>
+    </article>
+    <article class="card reveal">
+      <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=400&q=80" alt="ai"/>
+      <div class="ci bi"><i class="fa-solid fa-robot"></i></div>
+      <h3>AI Co-Pilot</h3>
+      <h4>Powered by GPT-4o</h4>
+      <p>Smart suggestions and <strong>auto bug fixes</strong> inline.</p>
+    </article>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <h2 class="sh">Get in touch</h2>
+  <h3 class="ss">We reply within 24 hours</h3>
+  <form onsubmit="send(event)">
+    <div class="row">
+      <input type="text" placeholder="Your name" required/>
+      <input type="email" placeholder="Your email" required/>
+    </div>
+    <textarea rows="4" placeholder="Your message..." required></textarea>
+    <button type="submit" class="btn-p" id="sbtn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+    <p id="fb"></p>
+  </form>
+</section>
+
+<footer>
+  <p><i class="fa-solid fa-bolt"></i> <strong>Nexora</strong> &copy; 2026</p>
+  <div class="socials">
+    <a href="#"><i class="fa-brands fa-github"></i></a>
+    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-discord"></i></a>
+  </div>
+</footer>
+
+<button class="top" id="top" onclick="scrollTo({top:0,behavior:'smooth'})"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="script.js"></script>
+</body>
+</html>
